@@ -49,35 +49,53 @@
     <Folder Include="Config" />
   </ItemGroup>
   <ItemGroup>
-    <Config Include="..\..\..\UDKGame\Config\UDKCharInfo.ini">
-      <Link>Config\UDKCharInfo.ini</Link>
+    <Config Include="..\..\..\UDKGame\Config\DefaultCharInfo.ini">
+      <Link>Config\DefaultCharInfo.ini</Link>
     </Config>
-    <Config Include="..\..\..\UDKGame\Config\UDKEditor.ini">
-      <Link>Config\UDKEditor.ini</Link>
+    <Config Include="..\..\..\UDKGame\Config\DefaultCompat.ini">
+      <Link>Config\DefaultCompat.ini</Link>
     </Config>
-    <Config Include="..\..\..\UDKGame\Config\UDKEditorKeyBindings.ini">
-      <Link>Config\UDKEditorKeyBindings.ini</Link>
+    <Config Include="..\..\..\UDKGame\Config\DefaultEditor.ini">
+      <Link>Config\DefaultEditor.ini</Link>
     </Config>
-    <Config Include="..\..\..\UDKGame\Config\UDKEditorUserSettings.ini">
-      <Link>Config\UDKEditorUserSettings.ini</Link>
+    <Config Include="..\..\..\UDKGame\Config\DefaultEditorKeyBindings.ini">
+      <Link>Config\DefaultEditorKeyBindings.ini</Link>
     </Config>
-    <Config Include="..\..\..\UDKGame\Config\UDKEngine.ini">
-      <Link>Config\UDKEngine.ini</Link>
+    <Config Include="..\..\..\UDKGame\Config\DefaultEditorUDK.ini">
+      <Link>Config\DefaultEditorUDK.ini</Link>
     </Config>
-    <Config Include="..\..\..\UDKGame\Config\UDKGame.ini">
-      <Link>Config\UDKGame.ini</Link>
+    <Config Include="..\..\..\UDKGame\Config\DefaultEditorUserSettings.ini">
+      <Link>Config\DefaultEditorUserSettings.ini</Link>
     </Config>
-    <Config Include="..\..\..\UDKGame\Config\UDKInput.ini">
-      <Link>Config\UDKInput.ini</Link>
+    <Config Include="..\..\..\UDKGame\Config\DefaultEngine.ini">
+      <Link>Config\DefaultEngine.ini</Link>
     </Config>
-    <Config Include="..\..\..\UDKGame\Config\UDKLightmass.ini">
-      <Link>Config\UDKLightmass.ini</Link>
+    <Config Include="..\..\..\UDKGame\Config\DefaultEngineUDK.ini">
+      <Link>Config\DefaultEngineUDK.ini</Link>
     </Config>
-    <Config Include="..\..\..\UDKGame\Config\UDKUI.ini">
-      <Link>Config\UDKUI.ini</Link>
+    <Config Include="..\..\..\UDKGame\Config\DefaultGame.ini">
+      <Link>Config\DefaultGame.ini</Link>
     </Config>
-    <Config Include="..\..\..\UDKGame\Config\UDKWeapon.ini">
-      <Link>Config\UDKWeapon.ini</Link>
+    <Config Include="..\..\..\UDKGame\Config\DefaultGameUDK.ini">
+      <Link>Config\DefaultGameUDK.ini</Link>
+    </Config>
+    <Config Include="..\..\..\UDKGame\Config\DefaultInput.ini">
+      <Link>Config\DefaultInput.ini</Link>
+    </Config>
+    <Config Include="..\..\..\UDKGame\Config\DefaultInputDefaults.ini">
+      <Link>Config\DefaultInputDefaults.ini</Link>
+    </Config>
+    <Config Include="..\..\..\UDKGame\Config\DefaultLightmass.ini">
+      <Link>Config\DefaultLightmass.ini</Link>
+    </Config>
+    <Config Include="..\..\..\UDKGame\Config\DefaultUI.ini">
+      <Link>Config\DefaultUI.ini</Link>
+    </Config>
+    <Config Include="..\..\..\UDKGame\Config\DefaultWeapon.ini">
+      <Link>Config\DefaultWeapon.ini</Link>
+    </Config>
+    <Config Include="..\..\..\UDKGame\Config\DefaultWeaponDefaults.ini">
+      <Link>Config\DefaultWeaponDefaults.ini</Link>
     </Config>
   </ItemGroup>
   <Import Condition="'$(MSBuildExtensionsPath32)' != ''" Project="$(MSBuildExtensionsPath32)\PixelMine\UnrealScript.targets" />
