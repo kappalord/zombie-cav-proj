@@ -9,13 +9,13 @@
     <StartProgram>..\..\..\Binaries\Win64\UDK.exe</StartProgram>
     <CmdArgs />
     <LoadMapAtStartup>True</LoadMapAtStartup>
-    <StartupMap>ZSD-Test</StartupMap>
+    <StartupMap>ZSD-Graveyard</StartupMap>
     <LoadGameType>True</LoadGameType>
     <UserGameType>ZSD.ZSDGameInfo</UserGameType>
     <NoSound>False</NoSound>
     <NoStartupMovies>True</NoStartupMovies>
     <UseUnpublished>True</UseUnpublished>
-    <ForceWindowedMode>True</ForceWindowedMode>
+    <ForceWindowedMode>False</ForceWindowedMode>
     <WindowWidth>800</WindowWidth>
     <WindowHeight>600</WindowHeight>
     <ShowLogWindow>False</ShowLogWindow>
