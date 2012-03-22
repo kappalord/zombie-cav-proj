@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">Win32</Platform>
+    <ProductVersion>1.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{deab48e5-886a-4f0c-a5e0-1eaa03ecf9bf}</ProjectGuid>
+    <OutputType>UserMod</OutputType>
+    <ProjectType>UnrealScript</ProjectType>
+    <RootNamespace>ZSD</RootNamespace>
+    <AssemblyName>ZSD</AssemblyName>
+    <Name>ZSD</Name>
+    <TargetGame>UnrealEngine 3 Mod</TargetGame>
+    <UccGamePrefix />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <UccUseUnpublished>False</UccUseUnpublished>
+    <UseUnpublished>False</UseUnpublished>
+    <ForceWindowedMode>True</ForceWindowedMode>
+    <WindowWidth>1024</WindowWidth>
+    <WindowHeight>768</WindowHeight>
+    <ShowLogWindow>False</ShowLogWindow>
+    <LogToFile>False</LogToFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <UccUseUnpublished>False</UccUseUnpublished>
+    <UseUnpublished>False</UseUnpublished>
+    <ForceWindowedMode>False</ForceWindowedMode>
+    <ShowLogWindow>False</ShowLogWindow>
+    <LogToFile>False</LogToFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="*\Classes\*.uc" />
+    <Compile Include="Classes\ZSDGameInfo.uc" />
+    <Compile Include="Classes\ZSDPawn.uc" />
+    <Compile Include="Classes\ZSDPlayerController.uc" />
+    <Compile Include="Classes\ZSDZombie.uc" />
+    <Content Include="**\*.uci" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Classes" />
+    <Folder Include="Config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Config Include="..\..\..\UDKGame\Config\UDKCharInfo.ini">
+      <Link>Config\UDKCharInfo.ini</Link>
+    </Config>
+    <Config Include="..\..\..\UDKGame\Config\UDKEditor.ini">
+      <Link>Config\UDKEditor.ini</Link>
+    </Config>
+    <Config Include="..\..\..\UDKGame\Config\UDKEditorKeyBindings.ini">
+      <Link>Config\UDKEditorKeyBindings.ini</Link>
+    </Config>
+    <Config Include="..\..\..\UDKGame\Config\UDKEditorUserSettings.ini">
+      <Link>Config\UDKEditorUserSettings.ini</Link>
+    </Config>
+    <Config Include="..\..\..\UDKGame\Config\UDKEngine.ini">
+      <Link>Config\UDKEngine.ini</Link>
+    </Config>
+    <Config Include="..\..\..\UDKGame\Config\UDKGame.ini">
+      <Link>Config\UDKGame.ini</Link>
+    </Config>
+    <Config Include="..\..\..\UDKGame\Config\UDKInput.ini">
+      <Link>Config\UDKInput.ini</Link>
+    </Config>
+    <Config Include="..\..\..\UDKGame\Config\UDKLightmass.ini">
+      <Link>Config\UDKLightmass.ini</Link>
+    </Config>
+    <Config Include="..\..\..\UDKGame\Config\UDKUI.ini">
+      <Link>Config\UDKUI.ini</Link>
+    </Config>
+    <Config Include="..\..\..\UDKGame\Config\UDKWeapon.ini">
+      <Link>Config\UDKWeapon.ini</Link>
+    </Config>
+  </ItemGroup>
+  <Import Condition="'$(MSBuildExtensionsPath32)' != ''" Project="$(MSBuildExtensionsPath32)\PixelMine\UnrealScript.targets" />
+  <Import Condition="'$(MSBuildExtensionsPath32)' == ''" Project="$(MSBuildExtensionsPath)\PixelMine\UnrealScript.targets" />
+</Project>
